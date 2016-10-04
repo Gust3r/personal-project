@@ -1,0 +1,72 @@
+  <!DOCTYPE html>
+  <html ng-app="restaurant">
+    <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="./reset.css">
+      <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
+      <link rel="stylesheet" href="./main.css" media="screen" title="no title">
+      <title>New Restaurant</title>
+    </head>
+    <body ng-controller="restaurantController">
+
+
+
+
+      <!-- overlay -->
+      <div class="overlay">
+
+      </div>
+
+    <!-- navigation bar that will be available in every view -->
+    <div class="nav-bar">
+      <ol class="nav-bar-views">
+      <a ui-sref="home" class="views">Home</a>
+      <a ui-sref="menu" class="views">Menu</a>
+      <a ui-sref="locations" class="views">Locations</a>
+      <a ui-sref="home" class="views"><img src="./image/cowboy.svg" alt="cowboy image" class="home-icon"/></a>
+      <a ui-sref="reservations" class="views">Reservations</a>
+      <a ui-sref="about" class="views">About</a>
+      <a ui-sref="contact" class="views">Contact</a>
+      </ol>
+    </div>
+   <ui-view></ui-view>
+
+
+   <div class="fullscreen-bg">
+     <video loop muted autoplay class="fullscreen-bg_video">
+       <source src="./image/testbackground.mp4" type="video/mp4">
+     </video>
+   </div>
+
+
+    <!-- maybe a footer with my information and short info -->
+
+
+    <div class="footer">
+      Created by Gustavo Ribeiro
+
+    </div>
+
+    <!-- angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+
+    <!-- jQuery -->
+
+    <script src="http://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
+
+
+    <!-- JS Files-->
+    <script type="text/javascript" src="./jquery/query.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./views/home/homeController.js" media="screen" title="no title"></script>
+    <script src="./views/about/aboutController.js" media="screen" title="no title"></script>
+    <script src="./views/contact/contactController.js" media="screen" title="no title"></script>
+    <script src="./views/locations/locationsController.js" media="screen" title="no title"></script>
+    <script src="./views/menu/menuController.js" media="screen" title="no title"></script>
+    <script src="./js/controllers/restaurantController.js" media="screen" title="no title"></script>
+    <script src="./views/reservations/reservationsController.js"></script>
+    <script src="./js/services/restaurantService.js"></script>
+
+    </body>
+  </html>

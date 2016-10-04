@@ -1,0 +1,106 @@
+/*font-family: 'Old Standard TT', serif;
+font-family: 'Pavanam', sans-serif;*/
+
+
+
+body {
+  padding-top: 65px;
+  font-family: 'Source Serif Pro', serif;
+}
+
+.overlay {
+  width: 100%;
+  color: black;
+  opacity: 6px;
+  z-index: -99;
+  position: absolute;
+}
+
+
+.nav-bar {
+  background: #343d46;
+  outline: none;
+  width: 100%;
+  height: 45px;
+  position: fixed;
+  top: 0px;
+  justify-content: space-between;
+  text: white;
+}
+/*NAV BAR*/
+.nav-bar-views {
+  display: flex;
+  justify-content: space-around;
+  height:100%;
+  align-items: center;
+}
+
+.home-icon {
+  width: 2em;
+  position: relative;
+  top: 2px;
+}
+
+.views {
+  color: white;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+.views:hover{
+  cursor: pointer;
+
+}
+
+/*FOOTER*/
+.footer {
+  background: #343d46;
+  width: 100%;
+  height: 45px;
+  position: fixed;;
+  bottom: 0px;
+  margin-top: -180px;
+  clear: both;
+
+}
+
+
+
+/*background*/
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+
+.fullscreen-bg_video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /*height: 100vh;*/
+}
+
+
+/*HOME TEMPLATE*/
+
+.welcome-tag {
+  color: #7B6C45;
+  font-size: 3em;
+  text-align: center;
+  margin-top: 180px;
+  text-shadow: 1px 1px white;
+}
+
+.home-logo {
+  width: 4em;
+  align-items: center;
+}
+
+.arrow-down {
+  width: 4em;
+}
