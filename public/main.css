@@ -1,33 +1,30 @@
 /*font-family: 'Old Standard TT', serif;
 font-family: 'Pavanam', sans-serif;*/
+@import 'https://fonts.googleapis.com/css?family=Didact+Gothic';
 
-
-
+/*body tag css is so text won't show up behind nav bar*/
 body {
+  background: url("./image/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-top: 65px;
-  font-family: 'Source Serif Pro', serif;
+  min-height: 400px;
+  margin-bottom: 100px;
+  clear: both;
+  font-family: 'Helvetica Neue', 'Helvetica';
 }
 
-.overlay {
-  width: 100%;
-  color: black;
-  opacity: 6px;
-  z-index: -99;
-  position: absolute;
-}
-
-
+/*ACTUAL NAV BAR*/
 .nav-bar {
-  background: #343d46;
+  background-color: rgba(0, 0, 0, 0.5);/*#343d46*/
   outline: none;
   width: 100%;
-  height: 45px;
+  height: 60px;
   position: fixed;
   top: 0px;
-  justify-content: space-between;
   text: white;
 }
-/*NAV BAR*/
+/*NAV BAR LINKS*/
 .nav-bar-views {
   display: flex;
   justify-content: space-around;
@@ -36,25 +33,33 @@ body {
 }
 
 .home-icon {
-  width: 2em;
+  width: 3em;
   position: relative;
   top: 2px;
+  background: white;
+  border-radius: 50%;
+}
+
+.home-icon:hover {
+  background: lightblue;
 }
 
 .views {
   color: white;
   font-size: 1em;
   text-decoration: none;
+  text-shadow: 2px 2px black;
 }
 
 .views:hover{
   cursor: pointer;
+  color: #666;
 
 }
 
 /*FOOTER*/
 .footer {
-  background: #343d46;
+  background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 45px;
   position: fixed;;
@@ -67,7 +72,7 @@ body {
 
 
 /*background*/
-.fullscreen-bg {
+/*.fullscreen-bg {
   position: fixed;
   top: 0;
   right: 0;
@@ -79,21 +84,32 @@ body {
 
 .fullscreen-bg_video {
   position: absolute;
+  display: block;
   top: 0;
   left: 0;
-  width: 100%;
-  /*height: 100vh;*/
-}
+  width: 100vw;
+}*/
 
 
 /*HOME TEMPLATE*/
+.home-top-section {
+  width: 100%;
+  height: 100%;
+}
 
 .welcome-tag {
-  color: #7B6C45;
-  font-size: 3em;
+  color: white;
+  font-size: 2em;
   text-align: center;
-  margin-top: 180px;
-  text-shadow: 1px 1px white;
+  margin-top: 240px;
+  margin-bottom: 240px;
+  text-shadow: 2px 2px black;
+  border: 3px solid white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .home-logo {
@@ -104,3 +120,81 @@ body {
 .arrow-down {
   width: 4em;
 }
+
+.arrow-down-div {
+  text-align: center;
+  margin-top: calc(33% - 4em);
+  margin-bottom: 2%;
+}
+
+footer {
+  background: url("./image/gaucho.jpg");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  z-index: -99;
+  border: 5px white;1
+}
+.home-footer-background {
+  width: 100%;
+  height: auto;
+}
+
+.home-section2 {
+  background-color: rgba(0, 0, 0, 1);
+  color: white;
+  width: 45%;
+  height: 100%;
+  opacity: .7;
+}
+
+.menu-button {
+  background-color: #B4A365; /* Green */
+   border: none;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   font-weight: bold;
+}
+
+/*MENU TEMPLATE*/
+
+/*LOCATIONS TEMPLATE*/
+
+.location {
+  background: white;
+  width: 85%;
+  margin: auto;
+  padding: 10px;
+  border: 10px black;
+  margin-top: 20vh;
+  list-style-type: none;
+  display: flex;
+}
+
+.contact-info {
+  padding: 10px;
+  line-height: 21px;
+}
+
+.map {
+
+  height: 100px;
+  width: 50%;
+  background-color: grey;
+
+}
+/*RESERVATIONS TEMPLATE*/
+
+/*ABOUT TEMPLATE*/
+
+/*CONTACT TEMPLATE*/

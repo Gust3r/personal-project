@@ -17,11 +17,11 @@ angular.module("restaurant", ["ui.router"]).config(function($stateProvider, $url
       controller:"aboutController",
       templateUrl:"./views/about/aboutTemplate.html"
     })
-    .state("contact", {
-      url:"/contact",
-      controller:"contactController",
-      templateUrl:"./views/contact/contactTemplate.html"
-    })
+    // .state("contact", {
+    //   url:"/contact",
+    //   controller:"contactController",
+    //   templateUrl:"./views/contact/contactTemplate.html"
+    // })
     .state("locations", {
       url:"/locations",
       controller:"locationsController",

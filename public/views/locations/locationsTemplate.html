@@ -1,0 +1,25 @@
+<section class="location">
+
+  <div class="contact-info">
+    Contact:
+    <li>Phone Number: {{phone}}</li>
+    <li>Email: {{email}}</li>
+    <br>
+    <ul class="">Hours:
+      <li>Monday: {{weekday}}</li>
+      <li>Tuesday: {{weekday}}</li>
+      <li>Wednesday: {{weekday}}</li>
+      <li>Thursday: {{weekday}}</li>
+      <li>Friday: {{weekend}}</li>
+      <li>Saturday: {{weekend}}</li>
+      <li>Sunday: {{weekend}}</li>
+    </ul>
+  </div>
+
+  <div class="map" id="map">
+
+  </div>
+</section>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+    async defer></script>
