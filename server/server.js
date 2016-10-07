@@ -2,8 +2,8 @@ var express = require('express');
 var cors = require('cors');
 var bodyParser = require('body-parser');
 var massive = require('massive');
-var connectionString = 'postgres://postgres:localhost/thursday';
-// might need to change the thursday
+var connectionString = 'postgres://postgres:@localhost/new_restaurant';
+
 
 var app = module.exports = express();
 
