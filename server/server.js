@@ -17,13 +17,13 @@ app.use(express.static('../public'));
 
 var menuCtrl = require('./controllers/menuCtrl');
 
-app.get('/api/menu', menuCtrl.getMenuItems);
-app.post();
-app.delete();
-app.put();
+app.get('/api/menu', menuCtrl.getAllMenu);
+app.post('/api/menu', menuCtrl.createMenuItem);
+app.delete('/api/menu', menuCtrl.deleteMenuItem);
+app.put('/api/menu', menuCtrl.updateMenuItem);
 
 
 var port = 9000;
-app.listen(post, function(){
+app.listen(port, function(){
   console.log('It\'s working! It\'s working!');
 });

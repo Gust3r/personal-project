@@ -99,6 +99,11 @@ body {
 
 /*MENU TEMPLATE*/
 
+.menu-container {
+  background: white;
+  margin: auto;
+}
+
 /*LOCATIONS TEMPLATE*/
 
 .location {
@@ -107,7 +112,8 @@ body {
   margin: auto;
   padding: 10px;
   border: 10px black;
-  margin-top: 20vh;
+  margin-top: 15vh;
+  margin-bottom: 40vh;
   list-style-type: none;
   display: flex;
   -webkit-box-shadow: 0px 0px 78px 26px rgba(0,0,0,0.7);
@@ -134,7 +140,8 @@ body {
   margin: auto;
   padding: 10px;
   border: 10px black;
-  margin-top: 20vh;
+  margin-top: 15vh;
+  margin-bottom: 40vh;
   list-style-type: none;
   display: flex;
   -webkit-box-shadow: 0px 0px 78px 26px rgba(0,0,0,0.7);
