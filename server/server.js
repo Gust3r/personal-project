@@ -18,8 +18,8 @@ app.use(express.static('../public'));
 var menuCtrl = require('./controllers/menuCtrl');
 
 app.get('/api/menu', menuCtrl.getAllMenu);
-app.post('/api/menu', menuCtrl.createMenuItem);
-app.delete('/api/menu', menuCtrl.deleteMenuItem);
+app.post('/api/admin', menuCtrl.createMenuItem); //changed menu to admin
+app.delete('/api/admin/:id', menuCtrl.deleteMenuItem);
 app.put('/api/menu', menuCtrl.updateMenuItem);
 
 

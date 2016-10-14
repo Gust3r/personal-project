@@ -14,7 +14,7 @@ module.exports = {
   },
 
   createMenuItem: function(req, res) {
-    db.post_menu_item([req.body.name, req.body.cut_of_meat, req.body.description], function(err){
+    db.post_menu_item([req.body.name, req.body.cut_of_meat, req.body.description], function(err, item){
       if (err) {
         res.status(402).json("something went wrong");
       } else {
@@ -34,11 +34,11 @@ module.exports = {
   },
 
   deleteMenuItem: function(req, res) {
-    db.delete_menu_item([req.body.id], function(err, menu){
-      if (!err) {
-        res.status(200).json(menu);
+    db.delete_menu_item([req.params.id], function(err, success){
+      if (err) {
+        res.sendStatus(500);
       } else {
-        res.send(err);
+        res.sendStatus(200);
       }
     });
   }

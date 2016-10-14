@@ -2,16 +2,27 @@
 font-family: 'Pavanam', sans-serif;*/
 @import{ url('https://fonts.googleapis.com/css?family=Didact+Gothic');
 }
+
+textarea {
+  resize: none;
+}
 /*body tag css is so text won't show up behind nav bar*/
 body {
-  background: url("./image/background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 65px;
-  min-height: 400px;
-  margin-bottom: 100px;
-  clear: both;
-  font-family: 'Helvetica Neue', 'Helvetica';
+  /*background: url("./image/background.jpg");*/
+  /*background: lightblue;*/
+  /*background-repeat: no-repeat;*/
+  /*background-position: top center;*/
+  /*background-size: cover;*/
+  /*padding-top: 65px;*/
+  /*min-height: 400px;*/
+  /*margin-bottom: 100px;*/
+  /*clear: both;*/
+  /*font-family: 'Helvetica Neue', 'Helvetica';*/
+
+  height: 100%;
+  margin: 0;
+  color: #777;
+  font: sans-serif;
 }
 
 /*ACTUAL NAV BAR*/
@@ -93,18 +104,124 @@ body {
 
 
 /*HOME TEMPLATE*/
-.parallax-container {
-   /*height: 50px;*/
- }
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.75;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("https://hd.unsplash.com/photo-1471623432079-b009d30b6729");
+  min-height: 100vh;
+}
+
+.bgimg-2 {
+  background-image: url("https://hd.unsplash.com/photo-1422360902398-0a91ff2c1a1f");
+  min-height: 500px;
+}
+
+.bgimg-3 {
+  background-image: url("https://hd.unsplash.com/photo-1468793195345-d9d67818016d");
+  min-height: 500px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
 
 /*MENU TEMPLATE*/
 
-.menu-container {
-  background: white;
-  margin: auto;
+.carousel-container {
+  width: 90%;
+  height: 100%;
+  margin: 3em;
 }
 
+.frame{
+  margin: auto;
+  width: 50%;
+  border: 3px;
+  padding: 10px;
+}
+
+img {
+  width: 100%;
+}
+
+.menu-background {
+  background-image: url("https://hd.unsplash.com/41/EOZpjI3oSqKPNnF2S4Tp_Untitled.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  z-index: -10;
+  position: absolute;
+}
+
+.menu-container {
+  background-color: rgba(250, 250, 250, .9);
+  margin: auto;
+  /* width: auto; */
+  padding: 2px;
+  margin-top: 12vh;
+  list-style-type: none;
+  /* display: inline-block; */
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.menu-items {
+  font-weight: bolder;
+  width: 23vw;
+  float: left;
+  display: block;
+  /*border: 1px solid black;*/
+  height: 200px;
+   margin: 5px;
+}
+
+
 /*LOCATIONS TEMPLATE*/
+
+.location-background {
+  background-image: url("https://hd.unsplash.com/photo-1452421822248-d4c2b47f0c81");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  z-index: -10;
+  position: absolute;
+}
 
 .location {
   background: white;
@@ -116,9 +233,6 @@ body {
   margin-bottom: 40vh;
   list-style-type: none;
   display: flex;
-  -webkit-box-shadow: 0px 0px 78px 26px rgba(0,0,0,0.7);
-  -moz-box-shadow: 0px 0px 78px 26px rgba(0,0,0,0.7);
-  box-shadow: 0px 0px 78px 26px rgba(0,0,0,0.7);
 }
 
 .contact-info {
@@ -133,6 +247,15 @@ body {
 
 }
 /*RESERVATIONS TEMPLATE*/
+.reservations-background{
+  background-image: url(https://hd.unsplash.com/photo-1471967183320-ee018f6e114a);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: -10;
+}
 
 .reservations-container {
   background: white;
@@ -144,9 +267,6 @@ body {
   margin-bottom: 40vh;
   list-style-type: none;
   display: flex;
-  -webkit-box-shadow: 0px 0px 78px 26px rgba(0,0,0,0.7);
-  -moz-box-shadow: 0px 0px 78px 26px rgba(0,0,0,0.7);
-  box-shadow: 0px 0px 78px 26px rgba(0,0,0,0.7);
 }
 
 .reservations {
@@ -169,4 +289,56 @@ body {
 
 /*ABOUT TEMPLATE*/
 
-/*CONTACT TEMPLATE*/
+/*ADMIN TEMPLATE*/
+
+.submit-form {
+  background: white;
+  width: 20%;
+  margin: auto;
+  padding: 10px;
+  border: 10px black;
+  margin-top: 1vh;
+  margin-bottom: 10vh;
+  list-style-type: none;
+  clear: both;
+}
+
+.admin-background {
+  background-image: url("https://hd.unsplash.com/photo-1461632830798-3adb3034e4c8");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: -10;
+
+}
+
+.delete-button {
+  display: flex;
+  align-content: flex-end;
+}
+
+.btn-class{
+ display: inline-block;
+ border:1px solid #BFBFBF;
+ color: #8C8C8C;
+ border-radius: 25px;
+ -webkit-border-radius: 25px;
+ -moz-border-radius: 25px;
+ font-family: Verdana;
+ width: auto;
+ height: auto;
+ font-size: 15px;
+ padding: 10px 40px;
+ background-color: #FCFAF9;
+}
+.btn-class:hover, .btn-class:active{
+ border:1px solid #BFBFBF;
+ color: #8C8C8C;
+ background-color: #E8E8E8;
+}
+
+.menu-items {
+  padding: inherit;
+}

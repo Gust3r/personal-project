@@ -1,5 +1,33 @@
-THIS IS THE MENU
+<div class="menu-background">
 
-<div ng-repeat="items in data" class="menu-container">
-  <li>{{items.name}}, {{items.cut_of_meat}} <br>{{items.description}}</li>
+  <!-- <section class="frame">
+    <section class="carousel-container">
+      <div><img src="./image/rio.jpeg" alt="rio" /></div>
+      <div><img src="./image/rio2.jpeg" alt="rio 2" /></div>
+      <div><img src="./image/rio3.jpeg" alt="bear 3" /></div>
+    </section>
+  </section> -->
+
+
+<div class="menu-container">
+
+
+<div ng-repeat="items in data track by $index" class="menu-items">
+  <li><strong>{{items.name}}</strong><br><hr> <i>{{items.cut_of_meat}}</i> <br><hr>{{items.description}}</li>
 </div>
+</div>
+
+</div>
+<div class="menu-background2">
+
+</div>
+
+<!-- <div class="submit-form">
+
+
+Name:<input type="text" name="name" ng-model="item.name">
+Cut of Meat:<input type="text" name="name" ng-model="item.cut_of_meat">
+Description:<textarea type="text" name="name" ng-model="item.description"></textarea>
+<button type="button" name="button" ng-click="post(item)" class="btn-class">Submit</button>
+
+</div> -->

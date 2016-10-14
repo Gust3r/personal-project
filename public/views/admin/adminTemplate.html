@@ -1,0 +1,25 @@
+<section class="admin-background">
+
+
+<div class="menu-container">
+
+
+<div ng-repeat="items in data track by $index" class="menu-items">
+  <li>{{items.name}}<br><hr> {{items.cut_of_meat}} <br><hr>{{items.description}}</li> <br> <button class="delete-button" ng-click="delete(items.id)">Delete</button>
+</div>
+</div>
+
+<div class="submit-form">
+<h4>Create Menu Item</h2>
+
+Name: <br>
+<input type="text" name="name" ng-model="item.name"> <br>
+
+Cut of Meat:<br><input type="text" name="name" ng-model="item.cut_of_meat"> <br>
+
+Description:<br><textarea type="text" name="name" ng-model="item.description"></textarea><br>
+
+<button type="button" name="button" ng-click="post(item)" class="btn-class">Submit</button>
+
+</div>
+</section>
