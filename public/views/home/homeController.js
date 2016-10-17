@@ -1,6 +1,6 @@
 angular.module("restaurant").controller("homeController", function($scope){
 
-$scope.name = "Restaurant Name";
+$scope.name = "Boizao Grill";
 
 $scope.homeIcon = "./image/cowboy.svg";
 

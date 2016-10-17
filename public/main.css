@@ -119,7 +119,7 @@ body {
 }
 
 .bgimg-2 {
-  background-image: url("https://hd.unsplash.com/photo-1422360902398-0a91ff2c1a1f");
+  background-image: url("http://www.boizaomarginal.com.br/wp-content/uploads/2016/08/1-buffet-925x695.jpg");
   min-height: 500px;
 }
 
@@ -145,7 +145,16 @@ body {
   letter-spacing: 10px;
 }
 
-h3 {
+.home-reservations.link {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+  text-decoration: none;
+}
+
+.home-h3 {
   letter-spacing: 5px;
   text-transform: uppercase;
   font: 20px "Lato", sans-serif;
@@ -156,7 +165,7 @@ h3 {
 /*MENU TEMPLATE*/
 
 .carousel-container {
-  width: 90%;
+
   height: 100%;
   margin: 3em;
 }
@@ -173,7 +182,7 @@ img {
 }
 
 .menu-background {
-  background-image: url("https://hd.unsplash.com/41/EOZpjI3oSqKPNnF2S4Tp_Untitled.jpg");
+  background-image: url("http://www.boizaomarginal.com.br/wp-content/uploads/2016/08/1-buffet-925x695.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -241,8 +250,9 @@ img {
   width: 50%;
 }
 
-.map {
+#map {
   width: 100%;
+  height: 400px;
   background-color: grey;
 
 }
@@ -288,6 +298,71 @@ img {
 }
 
 /*ABOUT TEMPLATE*/
+
+.about-bgimg-1, .about-bgimg-2, .about-bgimg-3 {
+  position: relative;
+  opacity: 0.75;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.about-bgimg-1 {
+  background-image: url("https://hd.unsplash.com/photo-1471623432079-b009d30b6729");
+  min-height: 100vh;
+}
+
+.about-bgimg-2 {
+  background-image: url("https://hd.unsplash.com/photo-1422360902398-0a91ff2c1a1f");
+  min-height: 500px;
+}
+
+.about-bgimg-3 {
+  background-image: url("https://hd.unsplash.com/photo-1468793195345-d9d67818016d");
+  min-height: 500px;
+}
+
+.about-caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.about-caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+.about-person {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.wagner {
+  text-align: center;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+.about-person-picture {
+ background-image: url("./image/dad.jpg");
+ background-repeat: no-repeat;
+ background-size: contain;
+ width: 10%;
+ height: 3em;
+}
 
 /*ADMIN TEMPLATE*/
 

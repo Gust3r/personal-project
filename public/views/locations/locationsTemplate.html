@@ -1,13 +1,20 @@
+<!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkVDCd2XpdIbHWGSKNmsVMKzpKhCWJPBU&callback=initMap"></script> -->
+
+
+
 <section class="location-background">
   <div class="location">
 
 
 
-  <div class="contact-info">
-    Contact:
+  <div class="contact-info"><hr>
+    Contact<br><hr>
     <li>Phone Number: {{phone}}</li>
     <li>Email: {{email}}</li>
-    <br>
+    <hr>
+    <div class="address">
+      Address: <a class="directions" target="_blank" href="https://maps.google.com/maps?daddr=40.762557,-111.902817">{{address}}</a>
+    </div><hr>
     <ul class="">Hours:
       <li>Monday: {{weekday}}</li>
       <li>Tuesday: {{weekday}}</li>
@@ -16,14 +23,17 @@
       <li>Friday: {{weekend}}</li>
       <li>Saturday: {{weekend}}</li>
       <li>Sunday: {{weekend}}</li>
-    </ul>
+    </ul><hr>
   </div>
 
   <div class="map" id="map">
-
+    <!-- <ng-map zoom="11" center="[40.762525,-111.903336]">
+      <marker position="Salt Lake City, UT" title="Restaurant" animation="none" centered="true"></marker>
+    </ng-map> -->
   </div>
 </div>
 </section>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
-    async defer></script>
+
+
+    <!-- API KEY AIzaSyCkVDCd2XpdIbHWGSKNmsVMKzpKhCWJPBU -->
