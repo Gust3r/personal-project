@@ -124,7 +124,7 @@ body {
 }
 
 .bgimg-3 {
-  background-image: url("https://hd.unsplash.com/photo-1468793195345-d9d67818016d");
+  background-image: url("http://3.bp.blogspot.com/-dbFuJLv91BY/UbZ9Gx00VpI/AAAAAAAAAKI/Oq3qzKuU79s/s1600/principal.jpg");
   min-height: 500px;
 }
 
@@ -357,11 +357,11 @@ img {
   color: #111;
 }
 .about-person-picture {
- background-image: url("./image/dad.jpg");
- background-repeat: no-repeat;
- background-size: contain;
- width: 10%;
- height: 3em;
+  background-image: url("./image/dad.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20%;
+  height: 26em;
 }
 
 /*ADMIN TEMPLATE*/
